@@ -1,0 +1,29 @@
+.comentary {
+  margin-top: 20px;
+  background-color: #eeeeee;
+  padding: 20px;
+  .comment {
+    margin: 10px 0;
+    padding: 20px;
+    border: 1px solid darken($color: #eeeeee, $amount: 20);
+
+    .commentInfo {
+      margin-bottom: 20px;
+      display: flex;
+      overflow: hidden;
+      .avatar {
+        height: 50px;
+        width: 50px;
+        border-radius: 200px;
+      }
+      .userMeta {
+        span {
+          margin-left: 10px;
+          padding: 5px;
+          font-size: 12px;
+          display: block;
+        }
+      }
+    }
+  }
+}

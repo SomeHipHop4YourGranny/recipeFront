@@ -1,0 +1,17 @@
+.recipeInstruction {
+  background-color: #eeeeee;
+  .ingredients {
+    padding: 20px;
+    ul {
+      margin: 0;
+    }
+  }
+  .instruction {
+    padding: 20px;
+  }
+  .advice {
+    padding: 20px;
+    background-color: #eeeee1;
+    text-align: center;
+  }
+}

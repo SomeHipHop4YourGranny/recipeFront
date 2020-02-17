@@ -1,0 +1,17 @@
+.recipe {
+  padding: 0 20px 20px 20px;
+  gap: 15px;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  .rightSide {
+    margin-top: 20px;
+  }
+  .leftSide {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .recipe {
+    display: block;
+  }
+}

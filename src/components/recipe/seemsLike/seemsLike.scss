@@ -1,0 +1,18 @@
+.seemsLike {
+  margin-top: 20px;
+  background-color: #eeeeee;
+  padding: 20px;
+  .likeItems {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: minmax(auto, 200px);
+    gap: 10px;
+    .likeItem {
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}

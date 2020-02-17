@@ -1,0 +1,45 @@
+.card {
+  height: 300px;
+  position: relative;
+  perspective: 1000px;
+  background-color: yellow;
+  .front,
+  .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transition: 1s;
+    backface-visibility: hidden;
+    background-color: orange;
+  }
+  .front {
+    img {
+      max-width: 100%;
+      min-width: 100%;
+      height: 300px;
+    }
+  }
+  .back {
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+    .top {
+      text-align: center;
+    }
+    .center {
+      max-height: 60%;
+      overflow: hidden;
+    }
+  }
+}
+
+.card:hover .front {
+  transform: rotateY(180deg);
+}
+.card:hover .back {
+  transform: rotateY(360deg);
+}
